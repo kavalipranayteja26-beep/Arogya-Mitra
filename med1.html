@@ -1,0 +1,70 @@
+
+ 
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Scanner</title>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    .Navbar{
+            background-color: lightskyblue;
+            justify-content: right;
+        }
+   .login{
+            border: solid 2px green;
+            height: 120px;
+            width: 450px;
+            margin-left: 350px;
+        margin-top: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(156, 246, 66, 0.808);
+        border-radius:20px ;
+        
+        }
+        button{
+            height: 30px;
+            width:150px;
+            margin-left:150px ;
+            margin-bottom: 20px;
+            background-color: aquamarine;
+            border: solid 2px white;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: darkseagreen;
+
+        }  
+        
+        .hcno{
+            margin:10px;
+            padding-left: 40px;
+
+            
+        }
+        .licno{
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+  <div class="Navbar">
+    <img src="c:\Users\Kavali Bala Shankar\OneDrive\Pictures\Arogya.jpg" style="height: 50px;width: 150px; border-radius: 25px;">
+
+    </div>
+     <form action="med2.html" method="get">
+        <input type="text" name="hcno" placeholder="Health Card No"><br><br>
+        <input type="text" name="licno" placeholder="Doctors Lic No"><br><br>
+        <button type="submit">Get Report</button>
+    </form>
+  <div id="reader" style="width:300px;"></div>
+  <p id="result"></p>
+
+  
+
+    
+
+</body>
+</html>
