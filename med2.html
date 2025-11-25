@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.Navbar{
+            background-color: lightskyblue;
+            justify-content: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="Navbar">
+    <img src="c:\Users\Kavali Bala Shankar\OneDrive\Pictures\Arogya.jpg" style="height: 50px;width: 150px; border-radius: 25px;">
+    <img src="https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/25951A05DV/25951A05DV.jpg" style="height:60px; width:60px;border-radius:50%">
+    <script >
+        const params = new URLSearchParams(window.location.search);
+        const hcno= params.get("hcno");
+        document.write("Health Card Number:"+hcno);
+
+        const licno= params.get("licno");
+        document.write("Doctor Lic Number:"+licno);
+        const mbno=params.get("mbno");
+        document.write("Mobile Number:"+mbno);
+         const mbno=params.get("name");
+        document.write("Name:"+name);
+        
+    </script>
+
+</body>
+</html>
